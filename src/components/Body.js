@@ -25,20 +25,6 @@ const Body = () => {
     // console.log(json);
   };
 
-  // onScroll = () => {
-  //   const that = this;
-
-  //   $(window).scroll(function () {
-  //     if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-  //       that.fetchMoreData();
-  //     }
-  //   });
-  // };
-
-  // const fetchMoreData = async () => {
-
-  // }
-
   // Use of tertionary  operator to check if list is empty or not
   return listOfRestaurants.length === 0 ? (
     <Shimmer />

@@ -18,7 +18,7 @@
 - HTTPS
 - Tree Shaking - remove unused code
 
-44:00 E7
+01:14:00 E7
 
 # Namaste Food
 
@@ -52,3 +52,8 @@ import Component from 'path';
 Normal JS utility function
 useState() -> This can create superpowerful react variable called state variables
 useEffect()
+
+# 2 type of Routing
+
+- client side routing -> When we route without making any network calls to the server and route in the browser itself in React Applications.
+- server side routing -> When we make and network call to the server and data got fetched by the server then it will be rendered on the client side in React Applications.
