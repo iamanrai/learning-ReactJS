@@ -27,25 +27,26 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px 30px;
-  padding: 0px 0px 0px 15px;
+  padding: 20px 0px 0px 15px;
 }
 .res-card {
-  width: 250px;
+  width: 260px;
   padding: 10px;
   border-radius: 10px;
 }
 .res-card:hover {
   cursor: pointer;
   background-color: #f0f0f0;
+  transform: scale(110%);
 }
 .search {
   padding: 10px;
 }
 .res-logo {
   width: 100%;
-  aspect-ratio: 1;
-  object-fit: fill;
-  border-radius: 20px;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  border-radius: 10px;
 }
 .filter-btn {
   padding: 5 30px;
@@ -65,7 +66,7 @@
   width: 200px;
   height: 350px;
   padding: 5px;
-  background-color: #f0f0f0;
+  background-color: #cac8c8;
 }
 .login-btn {
   padding: 5 30px;
@@ -89,6 +90,26 @@
   margin: 0px 100px 0px 100px;
   padding: 0px 100px 0px 100px;
 }
-link {
+a {
+  text-decoration: none;
+  color: black;
   /* list-style: none; */
+}
+.res-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0px;
+}
+.res-remaining {
+  font-size: 15px;
+  /* font-weight: 600; */
+  margin: 0;
+  padding: 0px;
+}
+.user-card {
+  padding: 10px;
+  border: 1px solid black;
+  width: 500px;
+  margin: 10px;
 }

@@ -18,7 +18,7 @@
 - HTTPS
 - Tree Shaking - remove unused code
 
-01:14:00 E7
+00:10:00 E9
 
 # Namaste Food
 
