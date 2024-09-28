@@ -35,7 +35,7 @@ const Body = () => {
       </h1>
     );
 
-  // Use of tertionary  operator to check if list is empty or not
+  // Use of tertionary  operator to check if list is empty or not.
   return listOfRestaurants.length === 0 ? (
     <Shimmer />
   ) : (
