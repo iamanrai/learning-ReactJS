@@ -9,6 +9,8 @@ const Body = () => {
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
 
+  // console.log(listOfRestaurants);
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -24,7 +26,7 @@ const Body = () => {
     setFilteredRestaurants(
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
-    // console.log(json);
+    console.log(json);
   };
   const onlineStatus = useOnlineStatus();
 
@@ -44,6 +46,7 @@ const Body = () => {
         <div className="mx-4 w-full">
           <input
             type="text"
+            data-testid="searchInput"
             className="placeholder:italic placeholder:text-red-300 block bg-white border border-red-300 rounded-md py-2 pl-4 pr-3 shadow-sm focus:outline-none focus:border-red-400 focus:ring-red-400 focus:ring-1 sm:text-sm"
             placeholder="Search for restaurants..."
             name="search"
@@ -67,7 +70,7 @@ const Body = () => {
           </button>
         </div>
         <button
-          className="mx-4 p-2 px-5 bg-red-300 rounded-md hover:bg-red-400"
+          className="min-w-max mx-4 p-2 px-5 bg-red-300 rounded-md hover:bg-red-400"
           onClick={() => {
             const filteredList = listOfRestaurants.filter(
               (item) => item.info.avgRating > 4.2
@@ -84,6 +87,11 @@ const Body = () => {
             key={resturant.info.id}
             to={"/restaurants/" + resturant.info.id}
           >
+            {/* {resturant.info.aggregatedDiscountInfoV3.header ? (
+              <RestaurantCardPromoted resData={resturant} />
+            ) : (
+              <RestaurantCard resData={resturant} />
+            )} */}
             <RestaurantCard resData={resturant} />
           </Link>
         ))}
